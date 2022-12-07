@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainTabController.swift
 //  UIKitSNS
 //
 //  Created by Woo Min on 2022/12/08.
@@ -7,14 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainTabController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .red
     }
-
-
+    
 }
-
