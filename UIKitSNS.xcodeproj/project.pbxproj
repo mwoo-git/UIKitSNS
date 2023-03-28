@@ -19,6 +19,8 @@
 		733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CA3042940F3C600603992 /* ImageSelectorController.swift */; };
 		733CA3072940F3E200603992 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CA3062940F3E200603992 /* NotificationController.swift */; };
 		733CA3092940F3FD00603992 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CA3082940F3FD00603992 /* ProfileController.swift */; };
+		73A7D66729D351B70004F705 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D66629D351B70004F705 /* FeedCell.swift */; };
+		73A7D66929D3531C0004F705 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D66829D3531C0004F705 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		733CA3042940F3C600603992 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		733CA3062940F3E200603992 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		733CA3082940F3FD00603992 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		73A7D66629D351B70004F705 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		73A7D66829D3531C0004F705 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = UIKitSNS/View/Extensions.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		733CA2F82940EFDE00603992 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				73A7D66829D3531C0004F705 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		733CA2FC2940EFF500603992 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73A7D66629D351B70004F705 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				733CA2E92940EF4C00603992 /* ViewController.swift in Sources */,
+				73A7D66729D351B70004F705 /* FeedCell.swift in Sources */,
 				733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */,
 				733CA3072940F3E200603992 /* NotificationController.swift in Sources */,
 				733CA3032940F3A100603992 /* SearchController.swift in Sources */,
@@ -212,6 +219,7 @@
 				733CA3092940F3FD00603992 /* ProfileController.swift in Sources */,
 				733CA3012940F39200603992 /* FeedController.swift in Sources */,
 				733CA2FF2940F17B00603992 /* MainTabController.swift in Sources */,
+				73A7D66929D3531C0004F705 /* Extensions.swift in Sources */,
 				733CA2E72940EF4C00603992 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -370,7 +378,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +411,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
