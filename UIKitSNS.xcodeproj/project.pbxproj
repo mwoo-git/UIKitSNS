@@ -20,9 +20,12 @@
 		733CA3072940F3E200603992 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CA3062940F3E200603992 /* NotificationController.swift */; };
 		733CA3092940F3FD00603992 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CA3082940F3FD00603992 /* ProfileController.swift */; };
 		73A7D66729D351B70004F705 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D66629D351B70004F705 /* FeedCell.swift */; };
-		73A7D66929D3531C0004F705 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D66829D3531C0004F705 /* Extensions.swift */; };
+		73A7D66929D3531C0004F705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D66829D3531C0004F705 /* UIView.swift */; };
 		73C1F13029D49F8000C65C34 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F12F29D49F8000C65C34 /* LoginController.swift */; };
 		73C1F13229D49F9700C65C34 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13129D49F9700C65C34 /* RegistrationController.swift */; };
+		73C1F13429D57A8A00C65C34 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13329D57A8A00C65C34 /* CustomTextField.swift */; };
+		73C1F13729D57DAD00C65C34 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13629D57DAD00C65C34 /* UIButton.swift */; };
+		73C1F13929D581F100C65C34 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13829D581F100C65C34 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +44,12 @@
 		733CA3062940F3E200603992 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		733CA3082940F3FD00603992 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		73A7D66629D351B70004F705 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
-		73A7D66829D3531C0004F705 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = UIKitSNS/View/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		73A7D66829D3531C0004F705 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = UIKitSNS/Extensions/UIView.swift; sourceTree = SOURCE_ROOT; };
 		73C1F12F29D49F8000C65C34 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		73C1F13129D49F9700C65C34 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		73C1F13329D57A8A00C65C34 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		73C1F13629D57DAD00C65C34 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		73C1F13829D581F100C65C34 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 				733CA2FA2940EFF100603992 /* Controller */,
 				733CA2F92940EFEF00603992 /* API */,
 				733CA2F82940EFDE00603992 /* Utils */,
+				73C1F13529D57D7C00C65C34 /* Extensions */,
 				733CA2E42940EF4C00603992 /* AppDelegate.swift */,
 				733CA2E62940EF4C00603992 /* SceneDelegate.swift */,
 				733CA2E82940EF4C00603992 /* ViewController.swift */,
@@ -96,7 +103,6 @@
 		733CA2F82940EFDE00603992 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				73A7D66829D3531C0004F705 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				73A7D66629D351B70004F705 /* FeedCell.swift */,
+				73C1F13329D57A8A00C65C34 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +158,16 @@
 				73C1F13129D49F9700C65C34 /* RegistrationController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		73C1F13529D57D7C00C65C34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73A7D66829D3531C0004F705 /* UIView.swift */,
+				73C1F13629D57DAD00C65C34 /* UIButton.swift */,
+				73C1F13829D581F100C65C34 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,18 +241,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C1F13429D57A8A00C65C34 /* CustomTextField.swift in Sources */,
 				733CA2E92940EF4C00603992 /* ViewController.swift in Sources */,
 				73C1F13029D49F8000C65C34 /* LoginController.swift in Sources */,
 				73A7D66729D351B70004F705 /* FeedCell.swift in Sources */,
 				733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */,
+				73C1F13729D57DAD00C65C34 /* UIButton.swift in Sources */,
 				733CA3072940F3E200603992 /* NotificationController.swift in Sources */,
 				733CA3032940F3A100603992 /* SearchController.swift in Sources */,
 				733CA2E52940EF4C00603992 /* AppDelegate.swift in Sources */,
 				733CA3092940F3FD00603992 /* ProfileController.swift in Sources */,
 				733CA3012940F39200603992 /* FeedController.swift in Sources */,
 				733CA2FF2940F17B00603992 /* MainTabController.swift in Sources */,
-				73A7D66929D3531C0004F705 /* Extensions.swift in Sources */,
+				73A7D66929D3531C0004F705 /* UIView.swift in Sources */,
 				733CA2E72940EF4C00603992 /* SceneDelegate.swift in Sources */,
+				73C1F13929D581F100C65C34 /* UIViewController.swift in Sources */,
 				73C1F13229D49F9700C65C34 /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
