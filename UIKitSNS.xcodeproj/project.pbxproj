@@ -26,6 +26,7 @@
 		73C1F13429D57A8A00C65C34 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13329D57A8A00C65C34 /* CustomTextField.swift */; };
 		73C1F13729D57DAD00C65C34 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13629D57DAD00C65C34 /* UIButton.swift */; };
 		73C1F13929D581F100C65C34 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13829D581F100C65C34 /* UIViewController.swift */; };
+		73C1F13B29D58EE200C65C34 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13A29D58EE200C65C34 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		73C1F13329D57A8A00C65C34 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		73C1F13629D57DAD00C65C34 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		73C1F13829D581F100C65C34 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		73C1F13A29D58EE200C65C34 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewModel.swift; path = UIKitSNS/Extensions/AuthenticationViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		733CA2FB2940EFF200603992 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				73C1F13A29D58EE200C65C34 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				73C1F13429D57A8A00C65C34 /* CustomTextField.swift in Sources */,
 				733CA2E92940EF4C00603992 /* ViewController.swift in Sources */,
+				73C1F13B29D58EE200C65C34 /* AuthenticationViewModel.swift in Sources */,
 				73C1F13029D49F8000C65C34 /* LoginController.swift in Sources */,
 				73A7D66729D351B70004F705 /* FeedCell.swift in Sources */,
 				733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */,
