@@ -39,10 +39,11 @@ class RegistrationController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemPurple
+        button.backgroundColor = .systemPurple.withAlphaComponent(0.5)
         button.layer.cornerRadius = 5
         button.setHeight(50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.isEnabled = false
         return button
     }()
     
@@ -58,6 +59,7 @@ class RegistrationController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureNotificationObservers()
     }
     
     // MARK: - Helpers
@@ -92,6 +94,10 @@ class RegistrationController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: - Actions
     
     @objc func handleShowLogin() {
@@ -101,7 +107,7 @@ class RegistrationController: UIViewController {
     @objc func textDidChange(sender: UITextField) {
         if sender == emailTextField {
             vm.email = sender.text
-        } else if  sender == passwordTextField {
+        } else if sender == passwordTextField {
             vm.password = sender.text
         } else if sender == fullnameTextField {
             vm.fullname = sender.text
