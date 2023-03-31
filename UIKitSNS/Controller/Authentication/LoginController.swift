@@ -95,7 +95,6 @@ class LoginController: UIViewController {
     func configureNotificationObservers() {
         emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
-
     }
     
     // MARK: - Actions
@@ -112,6 +111,14 @@ class LoginController: UIViewController {
             vm.password = sender.text
         }
         
+        updateForm()
+    }
+}
+
+// MARK: - FormViewModel
+
+extension LoginController: FormViewModel {
+    func updateForm() {
         loginButton.backgroundColor = vm.buttonBackgroundColor
         loginButton.setTitleColor(vm.buttonTitleColor, for: .normal)
         loginButton.isEnabled = vm.formIsValid
