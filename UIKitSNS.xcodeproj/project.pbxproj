@@ -34,6 +34,8 @@
 		73C1F13929D581F100C65C34 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13829D581F100C65C34 /* UIViewController.swift */; };
 		73C1F13B29D58EE200C65C34 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C1F13A29D58EE200C65C34 /* AuthenticationViewModel.swift */; };
 		73C1F13D29D727CE00C65C34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73C1F13C29D727CE00C65C34 /* GoogleService-Info.plist */; };
+		73D1D83529D88472009E653F /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D1D83429D88472009E653F /* ImageUploader.swift */; };
+		73D1D83729D8850F009E653F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D1D83629D8850F009E653F /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		73C1F13829D581F100C65C34 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		73C1F13A29D58EE200C65C34 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewModel.swift; path = UIKitSNS/Extensions/AuthenticationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		73C1F13C29D727CE00C65C34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		73D1D83429D88472009E653F /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageUploader.swift; path = UIKitSNS/Extensions/ImageUploader.swift; sourceTree = SOURCE_ROOT; };
+		73D1D83629D8850F009E653F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = UIKitSNS/Extensions/AuthService.swift; sourceTree = SOURCE_ROOT; };
 		B80D5BB12E94812FE9815C59 /* Pods-UIKitSNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSNS.release.xcconfig"; path = "Target Support Files/Pods-UIKitSNS/Pods-UIKitSNS.release.xcconfig"; sourceTree = "<group>"; };
 		C7B2D78C58B333F015CFACB3 /* Pods-UIKitSNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSNS.debug.xcconfig"; path = "Target Support Files/Pods-UIKitSNS/Pods-UIKitSNS.debug.xcconfig"; sourceTree = "<group>"; };
 		E541FE5FA21DEF948DED12E8 /* Pods_UIKitSNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitSNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 		733CA2F92940EFEF00603992 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				73D1D83429D88472009E653F /* ImageUploader.swift */,
+				73D1D83629D8850F009E653F /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -323,6 +329,8 @@
 				73C1F13B29D58EE200C65C34 /* AuthenticationViewModel.swift in Sources */,
 				73C1F13029D49F8000C65C34 /* LoginController.swift in Sources */,
 				73A7D66729D351B70004F705 /* FeedCell.swift in Sources */,
+				73D1D83529D88472009E653F /* ImageUploader.swift in Sources */,
+				73D1D83729D8850F009E653F /* AuthService.swift in Sources */,
 				733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */,
 				73C1F13729D57DAD00C65C34 /* UIButton.swift in Sources */,
 				733CA3072940F3E200603992 /* NotificationController.swift in Sources */,
