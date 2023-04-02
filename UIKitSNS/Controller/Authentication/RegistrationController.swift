@@ -146,6 +146,7 @@ class RegistrationController: UIViewController {
             }
             
             print("파이어스토어에 유저등록 성공")
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }
