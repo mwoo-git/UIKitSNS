@@ -11,6 +11,7 @@
 		731241D329E30C540032F6F8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D229E30C540032F6F8 /* UserService.swift */; };
 		731241D529E30CBB0032F6F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D429E30CBB0032F6F8 /* Constants.swift */; };
 		731241D729E31DAD0032F6F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D629E31DAD0032F6F8 /* User.swift */; };
+		731241D929E3263C0032F6F8 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D829E3263C0032F6F8 /* ProfileHeaderViewModel.swift */; };
 		7320004B29D7469C001D6018 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7320004A29D7469C001D6018 /* FirebaseAuth */; };
 		7320004D29D7469C001D6018 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7320004C29D7469C001D6018 /* FirebaseDatabase */; };
 		7320004F29D7469C001D6018 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7320004E29D7469C001D6018 /* FirebaseFirestore */; };
@@ -47,6 +48,7 @@
 		731241D229E30C540032F6F8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		731241D429E30CBB0032F6F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		731241D629E31DAD0032F6F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = UIKitSNS/User.swift; sourceTree = SOURCE_ROOT; };
+		731241D829E3263C0032F6F8 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeaderViewModel.swift; path = UIKitSNS/ProfileHeaderViewModel.swift; sourceTree = SOURCE_ROOT; };
 		733CA2E12940EF4C00603992 /* UIKitSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		733CA2E42940EF4C00603992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		733CA2E62940EF4C00603992 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				73C1F13A29D58EE200C65C34 /* AuthenticationViewModel.swift */,
+				731241D829E3263C0032F6F8 /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				733CA2DD2940EF4C00603992 /* Sources */,
 				733CA2DE2940EF4C00603992 /* Frameworks */,
 				733CA2DF2940EF4C00603992 /* Resources */,
+				DBC2F894CF68891F9BC7243C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +344,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DBC2F894CF68891F9BC7243C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitSNS/Pods-UIKitSNS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitSNS/Pods-UIKitSNS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKitSNS/Pods-UIKitSNS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,6 +378,7 @@
 				731241D329E30C540032F6F8 /* UserService.swift in Sources */,
 				73D1D83729D8850F009E653F /* AuthService.swift in Sources */,
 				73D1D83B29D98F76009E653F /* profileHeader.swift in Sources */,
+				731241D929E3263C0032F6F8 /* ProfileHeaderViewModel.swift in Sources */,
 				733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */,
 				73C1F13729D57DAD00C65C34 /* UIButton.swift in Sources */,
 				73D1D83929D98F5F009E653F /* profileCell.swift in Sources */,
