@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		60D501F6C434EE7A8C9C9273 /* Pods_UIKitSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E541FE5FA21DEF948DED12E8 /* Pods_UIKitSNS.framework */; };
+		731241D329E30C540032F6F8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D229E30C540032F6F8 /* UserService.swift */; };
+		731241D529E30CBB0032F6F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D429E30CBB0032F6F8 /* Constants.swift */; };
+		731241D729E31DAD0032F6F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731241D629E31DAD0032F6F8 /* User.swift */; };
 		7320004B29D7469C001D6018 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7320004A29D7469C001D6018 /* FirebaseAuth */; };
 		7320004D29D7469C001D6018 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7320004C29D7469C001D6018 /* FirebaseDatabase */; };
 		7320004F29D7469C001D6018 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7320004E29D7469C001D6018 /* FirebaseFirestore */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		731241D229E30C540032F6F8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		731241D429E30CBB0032F6F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		731241D629E31DAD0032F6F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = UIKitSNS/User.swift; sourceTree = SOURCE_ROOT; };
 		733CA2E12940EF4C00603992 /* UIKitSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		733CA2E42940EF4C00603992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		733CA2E62940EF4C00603992 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 		733CA2F82940EFDE00603992 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				731241D429E30CBB0032F6F8 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,8 +158,9 @@
 			children = (
 				73D1D83429D88472009E653F /* ImageUploader.swift */,
 				73D1D83629D8850F009E653F /* AuthService.swift */,
+				731241D229E30C540032F6F8 /* UserService.swift */,
 			);
-			path = API;
+			name = API;
 			sourceTree = "<group>";
 		};
 		733CA2FA2940EFF100603992 /* Controller */ = {
@@ -190,6 +198,7 @@
 		733CA2FD2940EFF700603992 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				731241D629E31DAD0032F6F8 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +353,8 @@
 				73C1F13029D49F8000C65C34 /* LoginController.swift in Sources */,
 				73A7D66729D351B70004F705 /* FeedCell.swift in Sources */,
 				73D1D83529D88472009E653F /* ImageUploader.swift in Sources */,
+				731241D529E30CBB0032F6F8 /* Constants.swift in Sources */,
+				731241D329E30C540032F6F8 /* UserService.swift in Sources */,
 				73D1D83729D8850F009E653F /* AuthService.swift in Sources */,
 				73D1D83B29D98F76009E653F /* profileHeader.swift in Sources */,
 				733CA3052940F3C600603992 /* ImageSelectorController.swift in Sources */,
@@ -356,6 +367,7 @@
 				733CA3012940F39200603992 /* FeedController.swift in Sources */,
 				733CA2FF2940F17B00603992 /* MainTabController.swift in Sources */,
 				73A7D66929D3531C0004F705 /* UIView.swift in Sources */,
+				731241D729E31DAD0032F6F8 /* User.swift in Sources */,
 				733CA2E72940EF4C00603992 /* SceneDelegate.swift in Sources */,
 				73C1F13929D581F100C65C34 /* UIViewController.swift in Sources */,
 				73C1F13229D49F9700C65C34 /* RegistrationController.swift in Sources */,

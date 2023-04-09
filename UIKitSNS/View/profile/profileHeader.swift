@@ -122,6 +122,9 @@ class ProfileHeader: UICollectionReusableView {
         topDivider.anchor(top: buttonStack.topAnchor, left: leftAnchor, right: rightAnchor, height: 0.5)
         
         bottomDivider.anchor(top: buttonStack.bottomAnchor, left: leftAnchor, right: rightAnchor, height: 0.5)
+        
+        addSubview(editProfileFollowButton)
+        editProfileFollowButton.anchor(top: nameLabel.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 12, paddingLeft: 20, paddingRight: 20, height: 40 )
     }
     
     required init?(coder: NSCoder) {
