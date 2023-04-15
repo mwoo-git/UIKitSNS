@@ -13,6 +13,7 @@ class RegistrationController: UIViewController {
     
     private var vm = RegistrationViewModel()
     private var profileImage: UIImage?
+    weak var delegate: AuthenticationDelegate?
     
     private let plushPhotoButton: UIButton = {
         let button = UIButton(type: .system)
@@ -145,8 +146,7 @@ class RegistrationController: UIViewController {
                 return
             }
             
-            print("파이어스토어에 유저등록 성공")
-            self.dismiss(animated: true, completion: nil)
+            self.delegate?.authenticationComlete()
         }
     }
 }
