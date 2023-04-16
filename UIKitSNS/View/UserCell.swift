@@ -11,11 +11,8 @@ class UserCell: UITableViewCell {
     
     // MARK: - Properties
     
-    var user: User? {
-        didSet {
-            usernameLabel.text = user?.username
-            fullnameLabel.text = user?.fullname
-        }
+    var vm: UserCellViewModel? {
+        didSet { configure() }
     }
     
     private let profileImageView: UIImageView = {
@@ -67,6 +64,14 @@ class UserCell: UITableViewCell {
     }
     
     // MARK: - Helpers
+    
+    func configure() {
+        guard let vm = vm else { return }
+        
+        profileImageView.sd_setImage(with: vm.profileImageUrl)
+        usernameLabel.text = vm.username
+        fullnameLabel.text = vm.fullname
+    }
     
     // MARK: - Actions
     
