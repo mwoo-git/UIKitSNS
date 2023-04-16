@@ -16,4 +16,12 @@ struct UserService {
             complection(user)
         }
     }
+    
+    static func fetchUsers(compection: @escaping([User]) -> Void) {
+        COLLECTION_USERS.getDocuments { snapshot, error in
+            guard let snapshot = snapshot else { return }
+            let users = snapshot.documents.map({ User(dictionary: $0.data()) })
+            compection(users)
+        }
+    }
 }
